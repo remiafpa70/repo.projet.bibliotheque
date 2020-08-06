@@ -25,6 +25,7 @@ public class LivreRepositoryImpl implements LivreRepository {
 public List<Livre> getAllBooks(){
 	
 	String query = "Select * from Livre ";
+	
 	return jdbcTemplate.query(query, new LivreMapper());
 }
 }

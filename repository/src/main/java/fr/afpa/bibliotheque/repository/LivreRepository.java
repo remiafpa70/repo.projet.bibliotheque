@@ -6,7 +6,10 @@ import fr.afpa.bibliotheque.data.Livre;
 
 public interface LivreRepository {
 	
-	int getNbLivreByCategory(String categoryName);
+	int getNbLivreByCategory(String categoryName); 
+	
 	List<Livre> getAllBooks();
+	
+	CreaLivre
 
 }

@@ -14,6 +14,7 @@ import fr.afpa.bibliotheque.data.Livre;
 public interface LivreBusiness {
 
 	public int getLibreByCategory(String cat);
+	
 	List<Livre> getAllBooks();
 }
 

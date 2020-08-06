@@ -33,16 +33,17 @@ public class BibliothequeMain {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		log.info("--------------------------------------"
-				+"---------------------------------------"
-				+"-------------Bibliothe-----------------"
-				+"---------------------------------------"
+		log.info("--------------------------------------\n"
+				+"---------------------------------------\n"
+				+"-------------Bibliotheque--------------\n"
+				+"---------------------------------------\n"
 				+"---------------------------------------");
 	
 		ApplicationContext ctx = new AnnotationConfigApplicationContext(MainConfig.class);
 	
 		TestBusiness test = (TestBusiness) ctx.getBean("testBusiness");
 		test.sayHello();
+		
 		LivreBusiness livre  = (LivreBusiness) ctx.getBean("livreBusinessImpl");
 
 		
@@ -52,6 +53,8 @@ public class BibliothequeMain {
 		List<Livre> books = livre.getAllBooks();
 		for(Livre bks:books) {
 			System.out.println(bks);
+			
+			
 		
 		}
 		
