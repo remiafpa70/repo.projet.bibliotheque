@@ -4,9 +4,9 @@ import java.util.List;
 
 import fr.afpa.bibliotheque.data.Livre;
 
-public interface ExempleLivreService {
+public interface LivreService {
 	
 	int getNbLivre(String category);
-
+	List<Livre> getAllBooks();
 
 }

@@ -3,14 +3,18 @@
  */
 package fr.afpa.bibliotheque.ihm.main;
 
+import java.util.List;
+
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
 import fr.afpa.bibliotheque.business.ExempleLivreBusiness;
+import fr.afpa.bibliotheque.business.LivreBusiness;
 import fr.afpa.bibliotheque.business.TestBusiness;
 import fr.afpa.bibliotheque.business.impl.ExempleLivreBusinessImpl;
+import fr.afpa.bibliotheque.data.Livre;
 import fr.afpa.bibliotheque.ihm.config.MainConfig;
 import javafx.application.Application;
 import javafx.stage.Stage;
@@ -39,11 +43,17 @@ public class BibliothequeMain {
 	
 		TestBusiness test = (TestBusiness) ctx.getBean("testBusiness");
 		test.sayHello();
-		
-		ExempleLivreBusiness livre =  (ExempleLivreBusiness) ctx.getBean("exempleLivreBusinessImpl");
+		LivreBusiness livre  = (LivreBusiness) ctx.getBean("livreBusinessImpl");
+
 		
 		int nbr = livre.getLibreByCategory("losirs");
 		System.out.println("show livres de la categores loisirs "+ nbr);
+		
+		List<Livre> books = livre.getAllBooks();
+		for(Livre bks:books) {
+			System.out.println(bks);
+		
+		}
 		
 		
 

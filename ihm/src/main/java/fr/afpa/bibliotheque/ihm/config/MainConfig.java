@@ -24,5 +24,6 @@ BusinessConfig.class
 @ComponentScan("fr.afpa.bibliotheque.ihm")
 public class MainConfig {
 	
+	
 
 }
