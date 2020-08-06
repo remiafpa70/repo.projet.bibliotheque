@@ -21,9 +21,9 @@ public class DataSourceConfig {
 	public DriverManagerDataSource provideSource() {
         DriverManagerDataSource dataSource = new org.springframework.jdbc.datasource.DriverManagerDataSource();
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
-        dataSource.setUsername("xxxx");
-        dataSource.setPassword("xxxxx");
-        dataSource.setUrl("xxxxx");
+        dataSource.setUsername("testuser");
+        dataSource.setPassword("RjqpoN5oLmiD7nEJ");
+        dataSource.setUrl("jdbc:mysql://localhost:3308/mydb?useSSL=false&serverTimezone=UTC");
         return dataSource;
     }
 

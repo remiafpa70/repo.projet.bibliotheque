@@ -12,6 +12,30 @@
 	<description>Business Component module</description>
 
 
+	<developers>
+		<developer>
+			<name>Rémi</name>
+			<organization>Black Card</organization>
+			<email>g.remig@keemail.me</email>
+			<url></url>
+			<roles>
+				<role>Elève</role>
+			</roles>
+		</developer>
+	</developers>
+
+	<contributors>
+		<contributor>
+			<name>Rémi</name>
+			<organization>Black Card</organization>
+			<email>g.remig@keemail.me</email>
+			<url></url>
+			<roles>
+				<role>Elève</role>
+			</roles>
+		</contributor>
+	</contributors>
+
 	<properties>
 
 	</properties>
